@@ -3,5 +3,7 @@ node_js:
   - 0.8
 before_install:
   - git submodule update --init --recursive
+script: 
+  - phantomjs testrunner.js
 after_script:
   - make unit.after

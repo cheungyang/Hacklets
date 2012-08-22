@@ -17,7 +17,7 @@ var runTest = function(){
     terminal.move(0,0).clearLine().color("red").write('status: lock');
 
     var child;
-    chlid=exec("make tdd", function(error, stdout, stderr){
+    chlid=exec("make unit", function(error, stdout, stderr){
         
         //util.print("stdout: "+stdout);
         //util.print("stderr: "+stderr);
