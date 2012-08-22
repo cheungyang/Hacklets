@@ -1,0 +1,16 @@
+{
+    "name": "Hacklet",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "node app",
+        "test": "make unit"
+    },
+    "dependencies": {
+        "express": "3.0.0rc3",
+        "jade": "*",
+        "expresso": "*",
+        "should": "*",
+        "node-terminal": "*"
+    }
+}
