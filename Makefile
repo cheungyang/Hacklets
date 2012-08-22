@@ -1,3 +1,5 @@
+smoke: smoke.execute
+
 unit: clean unit.execute
 unit.after: int.push.beacon
 
@@ -31,6 +33,10 @@ int.push.beacon:
 	curl -X POST -d "coverage.json"=`cat logs\/lib.coverage.json` "http://ci.mallocworks.com/beacon.php?proj=Hacklets&env=int&machine=ci3"
 
 #--------------------------------------------
+
+#3 smoke test
+smoke.execute:
+	phantomjs tests/smoke/loadspeed.js http://ci3.herokuapp.com/
 
 .PHONY: unit
 .DEFAULT: unit
