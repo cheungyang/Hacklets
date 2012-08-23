@@ -36,7 +36,7 @@ int.push.beacon:
 
 #3 smoke test
 smoke.execute:
-	phantomjs tests/smoke/loadspeed.js http://ci3.herokuapp.com/
+	cd tests/smoke/ && phantomjs ../js/phantom.js smoke.html && cd -
 
 .PHONY: unit
 .DEFAULT: unit
