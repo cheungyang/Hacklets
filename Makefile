@@ -30,7 +30,7 @@ unit.execute:
 	
 #2 send beacon for crontab to deploy & trigger smoke
 int.push.beacon:
-	curl -X POST -d "coverage.json"=`cat logs\/lib.coverage.json` "http://ci.mallocworks.com/beacon.php?proj=Hacklets&env=int&machine=ci3"
+	curl -X POST -d "coverage.json"=`cat logs\/lib.coverage.json` "http://ci.mallocworks.com:9999/beacon.php?proj=Hacklets&env=int&machine=ci3"
 
 #--------------------------------------------
 
