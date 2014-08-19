@@ -1,4 +1,4 @@
-Hacklets
+TDD examples
 ========
 
-showcasing the list of small hacks and its usage before I forget they exist.
+showcasing an example of linking github with CI, integration builds and unit/integ/smoke testings
